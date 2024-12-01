@@ -1,0 +1,158 @@
+[
+    { 
+        "name": "Deadpool", 
+        "image": "deadpool.jpg" 
+    },
+    { 
+        "name": "Inception", 
+        "image": "inception.jpg" 
+    },
+    { 
+        "name": "The Dark Knight", 
+        "image": "dark_knight.jpg" 
+    },
+    { 
+        "name": "Avengers", 
+        "image": "avengers.jpg" 
+    },
+    { 
+        "name": "Titanic", 
+        "image": "titanic.jpg" 
+    },
+    { 
+        "name": "Interstellar", 
+        "image": "interstellar.jpg" 
+    },
+    { 
+        "name": "The Matrix", 
+        "image": "matrix.jpg" 
+    },
+    { 
+        "name": "Pulp Fiction", 
+        "image": "pulp_fiction.jpg" 
+    },
+    { 
+        "name": "The Shawshank Redemption", 
+        "image": "shawshank.jpg" 
+    },
+    { 
+        "name": "Forrest Gump", 
+        "image": "forrest_gump.jpg" 
+    },
+    { 
+        "name": "Fight Club", 
+        "image": "fight_club.jpg" 
+    },
+    { 
+        "name": "The Godfather", 
+        "image": "godfather.jpg" 
+    },
+    { 
+        "name": "The Lord of the Rings: The Return of the King", 
+        "image": "lotr_return_king.jpg" 
+    },
+    { 
+        "name": "The Lion King", 
+        "image": "lion_king.jpg" 
+    },
+    { 
+        "name": "Spider-Man: No Way Home", 
+        "image": "spiderman_no_way_home.jpg" 
+    },
+    { 
+        "name": "Black Panther", 
+        "image": "black_panther.jpg" 
+    },
+    { 
+        "name": "Coco", 
+        "image": "coco.jpg" 
+    },
+    { 
+        "name": "Toy Story 3", 
+        "image": "toy_story_3.jpg" 
+    },
+    { 
+        "name": "The Avengers: Endgame", 
+        "image": "avengers_endgame.jpg" 
+    },
+    { 
+        "name": "Joker", 
+        "image": "joker.jpg" 
+    },
+    { 
+        "name": "Star Wars: Episode IV - A New Hope", 
+        "image": "star_wars_new_hope.jpg" 
+    },
+    { 
+        "name": "The Empire Strikes Back", 
+        "image": "empire_strikes_back.jpg" 
+    },
+    { 
+        "name": "The Social Network", 
+        "image": "social_network.jpg" 
+    },
+    { 
+        "name": "Whiplash", 
+        "image": "whiplash.jpg" 
+    },
+    { 
+        "name": "Parasite", 
+        "image": "parasite.jpg" 
+    },
+    { 
+        "name": "The Grand Budapest Hotel", 
+        "image": "grand_budapest_hotel.jpg" 
+    },
+    { 
+        "name": "La La Land", 
+        "image": "la_la_land.jpg" 
+    },
+    { 
+        "name": "Django Unchained", 
+        "image": "django_unchained.jpg" 
+    },
+    { 
+        "name": "The Wolf of Wall Street", 
+        "image": "wolf_wall_street.jpg" 
+    },
+    { 
+        "name": "Guardians of the Galaxy", 
+        "image": "guardians_galaxy.jpg" 
+    },
+    { 
+        "name": "Doctor Strange", 
+        "image": "doctor_strange.jpg" 
+    },
+    { 
+        "name": "Shutter Island", 
+        "image": "shutter_island.jpg" 
+    },
+    { 
+        "name": "The Silence of the Lambs", 
+        "image": "silence_lambs.jpg" 
+    },
+    { 
+        "name": "Good Will Hunting", 
+        "image": "good_will_hunting.jpg" 
+    },
+    { 
+        "name": "A Beautiful Mind", 
+        "image": "beautiful_mind.jpg" 
+    },
+    { 
+        "name": "The Pursuit of Happyness", 
+        "image": "pursuit_happyness.jpg" 
+    },
+    { 
+        "name": "Saving Private Ryan", 
+        "image": "saving_private_ryan.jpg" 
+    },
+    { 
+        "name": "The Terminator", 
+        "image": "terminator.jpg" 
+    },
+    { 
+        "name": "Terminator 2: Judgment Day", 
+        "image": "terminator_2.jpg" 
+    }
+]

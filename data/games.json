@@ -1,0 +1,50 @@
+[
+  {
+    "name": "The Legend of Zelda: Breath of the Wild",
+    "image": "/image/games/zelda-breath-of-the-wild.jpg"
+  },
+  {
+    "name": "Minecraft",
+    "image": "/image/games/minecraft.jpg"
+  },
+  {
+    "name": "Elden Ring",
+    "image": "/image/games/elden-ring.jpg"
+  },
+  {
+    "name": "God of War",
+    "image": "/image/games/god-of-war.jpg"
+  },
+  {
+    "name": "Fortnite",
+    "image": "/image/games/fortnite.jpg"
+  },
+  {
+    "name": "Call of Duty: Modern Warfare II",
+    "image": "/image/games/cod-modern-warfare-ii.jpg"
+  },
+  {
+    "name": "Grand Theft Auto V",
+    "image": "/image/games/gta-v.jpg"
+  },
+  {
+    "name": "Red Dead Redemption 2",
+    "image": "/image/games/red-dead-redemption-2.jpg"
+  },
+  {
+    "name": "Hollow Knight",
+    "image": "/image/games/hollow-knight.jpg"
+  },
+  {
+    "name": "Overwatch 2",
+    "image": "/image/games/overwatch-2.jpg"
+  },
+  {
+    "name": "Cyberpunk 2077",
+    "image": "/image/games/cyberpunk-2077.jpg"
+  },
+  {
+    "name": "The Witcher 3: Wild Hunt",
+    "image": "/image/games/witcher-3.jpg"
+  }
+]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blind Ranking Game</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <!-- Home Screen -->
+    <div class="home-container" id="home-screen">
+        <h1 class="main-title">BLIND CATEGORY RANKING GAME</h1>
+        <p class="subtitle">Select a category to begin ranking your favorites!</p>
+        <div class="categories-grid">
+        <div class="category" data-category="movies">
+            <img src="image/gui/movies-gui.jpg" alt="Movies" class="category-image">
+            <div class="category-overlay">
+            <span class="category-name">Movies</span>
+            </div>
+        </div>
+        <div class="category" data-category="games">
+            <img src="image/gui/games-gui.jpg" alt="Games" class="category-image">
+            <div class="category-overlay">
+            <span class="category-name">Games</span>
+            </div>
+        </div>
+        <div class="category" data-category="cars">
+            <img src="image/gui/cars-gui.jpg" alt="Cars" class="category-image">
+            <div class="category-overlay">
+            <span class="category-name">Cars</span>
+            </div>
+        </div>
+        </div>
+        <div id="loading-message" class="loading-message" style="display: none;">Loading...</div>
+  </div>  
+
+  <!-- Game Screen -->
+<div class="game-container" id="game-screen" style="display: none;">
+    <h1 id="category-title">Category Ranking</h1>
+    <div id="message-box" class="message"></div>
+    <div class="movie-display">
+      <img id="movie-image" src="" alt="Movie" class="movie-image" />
+      <p id="movie-name" class="movie-name">Loading...</p>
+    </div>
+    <div class="ranking-slots">
+      <div class="slot"><span class="slot-number">1</span><div class="slot-content" id="slot-1"></div></div>
+      <div class="slot"><span class="slot-number">2</span><div class="slot-content" id="slot-2"></div></div>
+      <div class="slot"><span class="slot-number">3</span><div class="slot-content" id="slot-3"></div></div>
+      <div class="slot"><span class="slot-number">4</span><div class="slot-content" id="slot-4"></div></div>
+      <div class="slot"><span class="slot-number">5</span><div class="slot-content" id="slot-5"></div></div>
+    </div>
+    <div class="ranking-buttons">
+      <button class="rank-btn" data-rank="1">1</button>
+      <button class="rank-btn" data-rank="2">2</button>
+      <button class="rank-btn" data-rank="3">3</button>
+      <button class="rank-btn" data-rank="4">4</button>
+      <button class="rank-btn" data-rank="5">5</button>
+    </div>
+    <div class="game-actions">
+      <button id="quit-btn" class="action-btn">Quit</button>
+      <button id="continue-btn" class="action-btn" style="display: none;">Continue</button>
+    </div>
+  </div>
+
+  <script src="script/app.js"></script>
+</body>
+</html>
