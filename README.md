@@ -1,6 +1,7 @@
 <h2>Blind Ranking Game</h2>
 
 <p>The Blind Ranking Game is a fun and interactive experience where players rank 5 items without knowing what the other items are until they rank each one.</p>
+<p><a href="https://github.com/NAMERIO/Blind-Ranking-Game/blob/main/Roadmap.md">Roadmap</a></p>
 
 <h2>Try it out!</h2>
 <p>Link not available yet!!!</p>
