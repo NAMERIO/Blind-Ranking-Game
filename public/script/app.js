@@ -17,16 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
         category.addEventListener('click', () => {
             const selectedCategory = category.dataset.category;
             currentCategory = selectedCategory;
-
             loadingMessage.style.display = 'block';
-
             setTimeout(() => {
                 homeScreen.style.display = 'none';
                 loadingMessage.style.display = 'none';
                 gameScreen.style.display = 'block';
-
                 categoryTitle.textContent = `${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)} Ranking`;
-
                 startGame(selectedCategory);
             }, 500);
         });
@@ -60,12 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 movies = shuffleArray(data);
                 currentMovieIndex = 0;
                 askedMovies = [];
-
                 if (movies.length === 0) {
                     showMessage("No items available for this category!", "error");
                     return;
                 }
-
                 displayNextMovie();
                 setupRankingButtons();
             })
@@ -80,9 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showRankingsPopup();
             return;
         }
-
         const movie = movies[currentMovieIndex];
-
         const movieImage = document.getElementById('movie-image');
         const movieName = document.getElementById('movie-name');
         movieImage.src = movie.image || "";
@@ -92,16 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleRankClick(event) {
         const rank = parseInt(event.target.dataset.rank);
-
         if (rankings[rank - 1]) {
             showMessage("This rank is already taken!", "error");
             return;
         }
-
         const movie = movies[currentMovieIndex];
         rankings[rank - 1] = movie.name;
         document.getElementById(`slot-${rank}`).textContent = movie.name;
-
         currentMovieIndex++;
         displayNextMovie();
     }
@@ -119,15 +108,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button id="quit-popup-btn">Quit</button>
             </div>
         `;
-    
         document.body.appendChild(popup);
-    
         document.getElementById('play-again-btn').addEventListener('click', () => {
             popup.remove();
             resetGame();
             startGame(currentCategory);
         });
-    
         document.getElementById('quit-popup-btn').addEventListener('click', () => {
             popup.remove();
             resetGame();
@@ -135,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('home-screen').style.display = 'block';
         });
     }
-    
 
     function setupRankingButtons() {
         const rankButtons = document.querySelectorAll('.rank-btn');
@@ -148,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function resetGame() {
         rankings = [null, null, null, null, null];
         currentMovieIndex = 0;
-
         for (let i = 1; i <= 5; i++) {
             document.getElementById(`slot-${i}`).textContent = "";
         }
@@ -157,15 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function showMessage(message, type) {
         const messageBox = document.getElementById('message-box');
         messageBox.innerText = message;
-
         if (type === "error") {
             messageBox.className = "message error";
         } else if (type === "success") {
             messageBox.className = "message success";
         }
-
         messageBox.style.display = "block";
-
         setTimeout(() => {
             messageBox.style.display = "none";
         }, 3000);

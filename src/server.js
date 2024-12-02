@@ -1,7 +1,6 @@
 const express = require('express');
 const path = require('path');
 const fs = require('fs');
-
 const app = express();
 const PORT = 3000;
 
@@ -10,7 +9,6 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.get('/api/:category', (req, res) => {
   const category = req.params.category;
   const filePath = path.join(__dirname, `../data/${category}.json`);
-
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       console.error(`Error reading file: ${filePath}`, err);
