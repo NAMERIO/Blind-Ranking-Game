@@ -5,7 +5,8 @@
   <li>✅ <strong>UI</strong></li>
   <li>✅ <strong>Client and Server Setup</strong></li>
   <li>✅ <strong>Gameplay</strong></li>
-<li>✅ <strong>Different Categorie</strong></li>
+  <li>✅ <strong>Different Categorie</strong></li>
+  <li>✅ <strong>Request a Category Option</strong></li>
 </ul>
 
 <h3>Missing Features / To-Do</h3>
