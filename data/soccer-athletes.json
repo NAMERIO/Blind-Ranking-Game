@@ -1,0 +1,122 @@
+[
+    {
+      "name": "Lionel Messi",
+      "image": "/image/soccer/lionel-messi.jpg"
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "image": "/image/soccer/cristiano-ronaldo.jpg"
+    },
+    {
+      "name": "Kylian Mbappé",
+      "image": "/image/soccer/kylian-mbappe.jpg"
+    },
+    {
+      "name": "Neymar Jr.",
+      "image": "/image/soccer/neymar-jr.jpg"
+    },
+    {
+      "name": "Robert Lewandowski",
+      "image": "/image/soccer/robert-lewandowski.jpg"
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "image": "/image/soccer/kevin-de-bruyne.jpg"
+    },
+    {
+      "name": "Mohamed Salah",
+      "image": "/image/soccer/mohamed-salah.jpg"
+    },
+    {
+      "name": "Erling Haaland",
+      "image": "/image/soccer/erling-haaland.jpg"
+    },
+    {
+      "name": "Virgil van Dijk",
+      "image": "/image/soccer/virgil-van-dijk.jpg"
+    },
+    {
+      "name": "Karim Benzema",
+      "image": "/image/soccer/karim-benzema.jpg"
+    },
+    {
+      "name": "Sadio Mané",
+      "image": "/image/soccer/sadio-mane.jpg"
+    },
+    {
+      "name": "Zlatan Ibrahimović",
+      "image": "/image/soccer/zlatan-ibrahimovic.jpg"
+    },
+    {
+      "name": "Luka Modrić",
+      "image": "/image/soccer/luka-modric.jpg"
+    },
+    {
+      "name": "Gianluigi Donnarumma",
+      "image": "/image/soccer/gianluigi-donnarumma.jpg"
+    },
+    {
+      "name": "Paul Pogba",
+      "image": "/image/soccer/paul-pogba.jpg"
+    },
+    {
+      "name": "Jadon Sancho",
+      "image": "/image/soccer/jadon-sancho.jpg"
+    },
+    {
+      "name": "Son Heung-min",
+      "image": "/image/soccer/son-heung-min.jpg"
+    },
+    {
+      "name": "Marcus Rashford",
+      "image": "/image/soccer/marcus-rashford.jpg"
+    },
+    {
+      "name": "Antoine Griezmann",
+      "image": "/image/soccer/antoine-griezmann.jpg"
+    },
+    {
+      "name": "Romelu Lukaku",
+      "image": "/image/soccer/romelu-lukaku.jpg"
+    },
+    {
+      "name": "Pedri",
+      "image": "/image/soccer/pedri.jpg"
+    },
+    {
+      "name": "João Félix",
+      "image": "/image/soccer/joao-felix.jpg"
+    },
+    {
+      "name": "Trent Alexander-Arnold",
+      "image": "/image/soccer/trent-alexander-arnold.jpg"
+    },
+    {
+      "name": "Harry Kane",
+      "image": "/image/soccer/harry-kane.jpg"
+    },
+    {
+      "name": "Sergio Ramos",
+      "image": "/image/soccer/sergio-ramos.jpg"
+    },
+    {
+      "name": "Thiago Silva",
+      "image": "/image/soccer/thiago-silva.jpg"
+    },
+    {
+      "name": "Jorginho",
+      "image": "/image/soccer/jorginho.jpg"
+    },
+    {
+      "name": "Phil Foden",
+      "image": "/image/soccer/phil-foden.jpg"
+    },
+    {
+      "name": "Alphonso Davies",
+      "image": "/image/soccer/alphonso-davies.jpg"
+    },
+    {
+      "name": "Hakim Ziyech",
+      "image": "/image/soccer/hakim-ziyech.jpg"
+    }
+]

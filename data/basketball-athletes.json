@@ -1,0 +1,118 @@
+[
+    {
+      "name": "LeBron James",
+      "image": "/image/basketball/lebron-james.jpg"
+    },
+    {
+      "name": "Stephen Curry",
+      "image": "/image/basketball/stephen-curry.jpg"
+    },
+    {
+      "name": "Kevin Durant",
+      "image": "/image/basketball/kevin-durant.jpg"
+    },
+    {
+      "name": "Giannis Antetokounmpo",
+      "image": "/image/basketball/giannis-antetokounmpo.jpg"
+    },
+    {
+      "name": "Luka Dončić",
+      "image": "/image/basketball/luka-doncic.jpg"
+    },
+    {
+      "name": "Jayson Tatum",
+      "image": "/image/basketball/jayson-tatum.jpg"
+    },
+    {
+      "name": "Anthony Davis",
+      "image": "/image/basketball/anthony-davis.jpg"
+    },
+    {
+      "name": "Damian Lillard",
+      "image": "/image/basketball/damian-lillard.jpg"
+    },
+    {
+      "name": "Jimmy Butler",
+      "image": "/image/basketball/jimmy-butler.jpg"
+    },
+    {
+      "name": "Ja Morant",
+      "image": "/image/basketball/ja-morant.jpg"
+    },
+    {
+      "name": "Nikola Jokić",
+      "image": "/image/basketball/nikola-jokic.jpg"
+    },
+    {
+      "name": "Devin Booker",
+      "image": "/image/basketball/devin-booker.jpg"
+    },
+    {
+      "name": "James Harden",
+      "image": "/image/basketball/james-harden.jpg"
+    },
+    {
+      "name": "Kawhi Leonard",
+      "image": "/image/basketball/kawhi-leonard.jpg"
+    },
+    {
+      "name": "Zion Williamson",
+      "image": "/image/basketball/zion-williamson.jpg"
+    },
+    {
+      "name": "Karl-Anthony Towns",
+      "image": "/image/basketball/karl-anthony-towns.jpg"
+    },
+    {
+      "name": "Paul George",
+      "image": "/image/basketball/paul-george.jpg"
+    },
+    {
+      "name": "Chris Paul",
+      "image": "/image/basketball/chris-paul.jpg"
+    },
+    {
+      "name": "Donovan Mitchell",
+      "image": "/image/basketball/donovan-mitchell.jpg"
+    },
+    {
+      "name": "Klay Thompson",
+      "image": "/image/basketball/klay-thompson.jpg"
+    },
+    {
+      "name": "Draymond Green",
+      "image": "/image/basketball/draymond-green.jpg"
+    },
+    {
+      "name": "Trae Young",
+      "image": "/image/basketball/trae-young.jpg"
+    },
+    {
+      "name": "DeMar DeRozan",
+      "image": "/image/basketball/demar-derozan.jpg"
+    },
+    {
+      "name": "Julius Randle",
+      "image": "/image/basketball/julius-randle.jpg"
+    },
+    {
+      "name": "Russell Westbrook",
+      "image": "/image/basketball/russell-westbrook.jpg"
+    },
+    {
+      "name": "Ben Simmons",
+      "image": "/image/basketball/ben-simmons.jpg"
+    },
+    {
+      "name": "Tyrese Haliburton",
+      "image": "/image/basketball/tyrese-haliburton.jpg"
+    },
+    {
+      "name": "LaMelo Ball",
+      "image": "/image/basketball/lamelo-ball.jpg"
+    },
+    {
+      "name": "Rudy Gobert",
+      "image": "/image/basketball/rudy-gobert.jpg"
+    }
+]

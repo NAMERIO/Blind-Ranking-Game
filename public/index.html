@@ -8,33 +8,50 @@
 </head>
 <body>
   <!-- Home Screen -->
-    <div class="home-container" id="home-screen">
-        <h1 class="main-title">BLIND CATEGORY RANKING GAME</h1>
-        <p class="subtitle">Select a category to begin ranking your favorites!</p>
-        <div class="categories-grid">
+  <div class="home-container" id="home-screen">
+    <h1 class="main-title">BLIND CATEGORY RANKING GAME</h1>
+    <p class="subtitle">Select a category to begin ranking!</p>
+    <div class="categories-grid">
         <div class="category" data-category="movies">
             <img src="image/gui/movies-gui.jpg" alt="Movies" class="category-image">
             <div class="category-overlay">
-            <span class="category-name">Movies</span>
+                <span class="category-name">Movies</span>
             </div>
         </div>
         <div class="category" data-category="games">
             <img src="image/gui/games-gui.jpg" alt="Games" class="category-image">
             <div class="category-overlay">
-            <span class="category-name">Games</span>
+                <span class="category-name">Games</span>
             </div>
         </div>
         <div class="category" data-category="cars">
             <img src="image/gui/cars-gui.jpg" alt="Cars" class="category-image">
             <div class="category-overlay">
-            <span class="category-name">Cars</span>
+                <span class="category-name">Cars</span>
             </div>
         </div>
+        <div class="category" data-category="soccer-athletes">
+            <img src="image/gui/soccer-athlete.jpg" alt="Soccer Athlete" class="category-image">
+            <div class="category-overlay">
+                <span class="category-name">Soccer Athlete</span>
+            </div>
         </div>
-        <div id="loading-message" class="loading-message" style="display: none;">Loading...</div>
-  </div>  
-
-  <!-- Game Screen -->
+        <div class="category" data-category="basketball-athletes">
+            <img src="image/gui/basketball-athlete.jpg" alt="Basketball Athlete" class="category-image">
+            <div class="category-overlay">
+                <span class="category-name">Basketball Athlete</span>
+            </div>
+        </div>
+        <div class="category" data-category="football-athletes">
+            <img src="image/gui/football-gui.jpg" alt="Football Athlete" class="category-image">
+            <div class="category-overlay">
+                <span class="category-name">Football Athlete</span>
+            </div>
+        </div>
+    </div>
+    <div id="loading-message" class="loading-message" style="display: none;">Loading...</div>
+</div>
+<!-- Game Screen -->
 <div class="game-container" id="game-screen" style="display: none;">
     <h1 id="category-title">Category Ranking</h1>
     <div id="message-box" class="message"></div>
