@@ -6,18 +6,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryTitle = document.getElementById('category-title');
     const quitButton = document.getElementById('quit-btn');
     const continueButton = document.getElementById('continue-btn');
+    const requestCategoryBtn = document.getElementById('request-category-btn');
+    const modal = document.getElementById('request-category-modal');
+    const closeModal = document.getElementById('close-modal');
+    const form = document.getElementById('request-category-form');
+    const responseBox = document.getElementById('response-box');
+    const responseMessage = document.getElementById('response-message');
+    const responseOkBtn = document.getElementById('response-ok-btn');
 
     let currentCategory = "";
     let movies = [];
     let rankings = [null, null, null, null, null];
     let currentMovieIndex = 0;
-    let askedMovies = [];
 
     categories.forEach((category) => {
         category.addEventListener('click', () => {
             const selectedCategory = category.dataset.category;
             currentCategory = selectedCategory;
             loadingMessage.style.display = 'block';
+            requestCategoryBtn.style.display = 'none';
             setTimeout(() => {
                 homeScreen.style.display = 'none';
                 loadingMessage.style.display = 'none';
@@ -31,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quitButton.addEventListener('click', () => {
         gameScreen.style.display = 'none';
         homeScreen.style.display = 'block';
+        requestCategoryBtn.style.display = 'block';
         resetGame();
     });
 
@@ -55,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             .then((data) => {
                 movies = shuffleArray(data);
                 currentMovieIndex = 0;
-                askedMovies = [];
                 if (movies.length === 0) {
                     showMessage("No items available for this category!", "error");
                     return;
@@ -117,8 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('quit-popup-btn').addEventListener('click', () => {
             popup.remove();
             resetGame();
-            document.getElementById('game-screen').style.display = 'none';
-            document.getElementById('home-screen').style.display = 'block';
+            gameScreen.style.display = 'none';
+            homeScreen.style.display = 'block';
         });
     }
 
@@ -141,11 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showMessage(message, type) {
         const messageBox = document.getElementById('message-box');
         messageBox.innerText = message;
-        if (type === "error") {
-            messageBox.className = "message error";
-        } else if (type === "success") {
-            messageBox.className = "message success";
-        }
+        messageBox.className = `message ${type}`;
         messageBox.style.display = "block";
         setTimeout(() => {
             messageBox.style.display = "none";
@@ -159,4 +162,58 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return array;
     }
+
+    requestCategoryBtn.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+    function showResponseBox(message, type) {
+        responseBox.style.display = 'flex';
+        responseBox.className = `response-box ${type}`;
+        responseMessage.textContent = message;
+    }
+
+    responseOkBtn.addEventListener('click', () => {
+        responseBox.style.display = 'none';
+        modal.style.display = 'none';
+    });
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const categoryName = document.getElementById('category-name').value.trim();
+        const categoryItems = document.getElementById('category-items').value.split(',').map(item => item.trim());
+        const suggestion = {
+            category: categoryName,
+            items: categoryItems
+        };
+        fetch('/api/suggest-category', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(suggestion)
+        })
+        .then(response => {
+            if (response.ok) {
+                showResponseBox('Suggestion submitted successfully!', 'success');
+                form.reset();
+            } else {
+                throw new Error('Failed to submit suggestion');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            showResponseBox('Error submitting suggestion. Please try again.', 'error');
+        });
+    });
 });

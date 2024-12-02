@@ -9,6 +9,28 @@
   </head>
   <body>
     <!-- Home Screen -->
+    <button id="request-category-btn" class="request-category-btn">Request a Category</button>
+    <div id="request-category-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <button class="close-btn" id="close-modal">&times;</button>
+        <h2>Request a Category</h2>
+        <form id="request-category-form">
+          <div>
+            <label for="category-name">Category Name:</label>
+            <input type="text" id="category-name" name="categoryName" required>
+          </div>
+          <div>
+            <label for="category-items">Items/People/Object/etc...</label>
+            <textarea id="category-items" name="categoryItems" placeholder="Enter items separated by commas" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <div id="response-box" class="response-box" style="display: none;">
+          <p id="response-message"></p>
+          <button id="response-ok-btn" class="ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
     <div class="home-container" id="home-screen">
       <h1 class="main-title">BLIND CATEGORY RANKING GAME</h1>
       <p class="subtitle">Select a category to begin ranking!</p>

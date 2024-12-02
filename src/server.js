@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.json());
 
 app.get('/api/:category', (req, res) => {
   const category = req.params.category;
@@ -22,6 +23,29 @@ app.get('/api/:category', (req, res) => {
         res.status(500).json({ error: 'Failed to parse category data.' });
       }
     }
+  });
+});
+
+app.post('/api/suggest-category', (req, res) => {
+  const suggestion = req.body;
+  const filePath = path.join(__dirname, '../data/suggestion.json');
+  fs.readFile(filePath, 'utf8', (err, data) => {
+      let suggestions = [];
+      if (!err && data) {
+          try {
+              suggestions = JSON.parse(data);
+          } catch (parseError) {
+              console.error('Error parsing existing suggestions:', parseError);
+          }
+      }
+      suggestions.push(suggestion);
+      fs.writeFile(filePath, JSON.stringify(suggestions, null, 2), 'utf8', (writeErr) => {
+          if (writeErr) {
+              console.error('Error saving suggestion:', writeErr);
+              return res.status(500).json({ error: 'Failed to save suggestion' });
+          }
+          res.status(200).json({ message: 'Suggestion saved successfully' });
+      });
   });
 });
 
