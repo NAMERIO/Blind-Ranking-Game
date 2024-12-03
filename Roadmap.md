@@ -14,6 +14,9 @@
   <li>❌ <strong>Image for movies.</strong></li>
   <li>❌ <strong>Image for cars</strong></li>
   <li>❌ <strong>Image for games</strong></li>
+  <li>❌ <strong>Image for soccer players</strong></li>
+  <li>❌ <strong>Image for football players</strong></li>
+  <li>❌ <strong>Image for basketball players</strong></li>
 </ul>
 
 <h3>Planned Improvements</h3>
